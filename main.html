@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <div id="loading" class="loading-container" style="display: none">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+</div>
+
+
+
+    <main >
+        <section class="game-container">
+            
+            <div class="contain">
+                <div class="box box1">
+                    <h1 class="heading">TRY YOUR LUCK</h1>
+                    <div class="img">
+                        <img src="img.png" alt="Lucky Clover" class="game-image">
+                    </div>
+                    <div class="btns">
+                        <button class="btn bt-eh easy" aria-label="Start Easy Game">Easy</button>
+                        <button class="btn  bt-eh difficult" aria-label="Start Difficult Game">Difficult</button>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <div class="crd1">
+                        <h2 class="gsTxt">Your Guess Info</h2>
+                    </div>
+                    <div class="crd2">
+                        <label for="userGuess" class="sr-only">Enter your guess</label>
+                        <input type="number" id="userGuess" class="userVal" placeholder="Enter your guess" min="1" max="100">
+                    </div>
+                    <div class="crd3">
+                        <p id="previousAttmpts">Number of Attempts: <span class="chance">0</span></p>
+                        <p id="previousGuess">Your Previous Guesses: <span>None</span></p>
+                    </div>
+                    <button id="submitGuess" class="btn submit-guess">Submit Guess</button>
+                    <p id="feedback" class="feedback"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="ni.js"></script>
+</body>
+</html>
